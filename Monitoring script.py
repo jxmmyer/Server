@@ -72,7 +72,7 @@ def measure(args):
             print(f"{timestamp}  {name}: {value:.1f}%")
     database.close()
 
-
+#test comment
 
 
 def build_filter(args):
