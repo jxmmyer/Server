@@ -73,6 +73,8 @@ def measure(args):
     database.close()
 
 
+
+
 def build_filter(args):
     """Return the SQL WHERE clause and parameters for the report filters."""
     clauses, params = [], []
@@ -140,6 +142,7 @@ def main():
     """Run the chosen mode."""
     args = build_parser().parse_args()
     {"measure": measure, "report": report}[args.mode](args)
+
 
 
 if __name__ == "__main__":
